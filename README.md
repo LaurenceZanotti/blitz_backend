@@ -1,6 +1,6 @@
 # Blitz Backend
 
-Startup de lista de tarefas do ulalau
+Startup de lista de tarefas
 
 ## Como rodar
 
