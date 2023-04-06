@@ -6,10 +6,8 @@ Startup de lista de tarefas
 
 `yarn install`
 
-`yarn tsc`
+`yarn dev`
 
-`node dist/server.js`
+## Como fazer o build
 
-## Como compilar
-
-`yarn tsc`
+`yarn build`
