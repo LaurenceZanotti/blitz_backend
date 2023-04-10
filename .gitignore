@@ -1,3 +1,5 @@
+.adminjs/
+
 *.db
 *.db-journal
 
