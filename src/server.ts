@@ -1,10 +1,12 @@
 import express from 'express'
 import AdminJS from 'adminjs'
 import AdminJSExpress from '@adminjs/express'
-
+import dotenv from 'dotenv'
 import routes from './routes'
 
-const PORT = 3000
+dotenv.config()
+
+const PORT = process.env.APP_PORT || 3000
 
 const main = async () => {
     const app = express()
