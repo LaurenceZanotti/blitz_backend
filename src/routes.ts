@@ -1,5 +1,11 @@
 import indexController from "./controllers/indexController"
-import { deleteTodoController, getTodoController, getTodosController, postTodosController, putTodoController } from "./controllers/todo/todoController"
+import {
+    deleteTodoController,
+    getTodoController,
+    getTodosController,
+    postTodosController,
+    putTodoController
+} from "./controllers/todo/todoController"
 
 const express = require("express")
 const router = express.Router()

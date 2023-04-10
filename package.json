@@ -5,9 +5,15 @@
   "author": "Laurence Zanotti",
   "license": "MIT",
   "dependencies": {
+    "@adminjs/express": "^5.1.0",
+    "@adminjs/prisma": "^3.0.1",
     "@prisma/client": "^4.12.0",
+    "adminjs": "^6.8.7",
     "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.3",
     "prisma": "^4.12.0",
+    "tslib": "^2.5.0",
     "tsup": "^6.7.0",
     "tsx": "^3.12.6"
   },
