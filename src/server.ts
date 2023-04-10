@@ -1,10 +1,20 @@
 import express from 'express'
+import AdminJS from 'adminjs'
+import AdminJSExpress from '@adminjs/express'
+
 import routes from './routes'
 
-const port = 53999
+const PORT = 3000
 
-const app = express()
+const main = async () => {
+    const app = express()
+    const admin = new AdminJS({})
+    const adminRouter = AdminJSExpress.buildRouter(admin)
 
-app.use(routes)
+    app.use(admin.options.rootPath, adminRouter)
+    app.use(routes)
+    
+    app.listen(PORT, () => console.log(`Aplicativo rodando no http://localhost:${PORT}\nAdmin no http://localhost:${PORT}${admin.options.rootPath}`))
+}
 
-app.listen(port, () => console.log(`Aplicativo rodando no http://localhost:${port}`))
+main()
